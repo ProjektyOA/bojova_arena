@@ -39,7 +39,7 @@ public class Bojovnik {
 
     /**
      * Nastaví jméno
-     * @param jmeno 
+     * @param jmeno jméno bojovníka
      */
     public void setJmeno(String jmeno) {
         this.jmeno = jmeno;
@@ -47,7 +47,7 @@ public class Bojovnik {
 
     /**
      * Vrátí aktuální zdraví
-     * @return aktZdravi
+     * @return aktZdravi zdraví bojovníka
      */
     public int getAktZdravi() {
         return aktZdravi;
@@ -55,7 +55,7 @@ public class Bojovnik {
 
     /**
      * Nasatví zdraví bojovníka
-     * @param aktZdravi 
+     * @param aktZdravi zdravi bojovnika
      */
     public void setAktZdravi(int aktZdravi) {
         this.aktZdravi = aktZdravi;
@@ -71,7 +71,7 @@ public class Bojovnik {
 
     /**
      * Nastaví maximální zdraví
-     * @param maxZdravi 
+     * @param maxZdravi maximální zdraví bojovníka
      */
     public void setMaxZdravi(int maxZdravi) {
         this.maxZdravi = maxZdravi;
@@ -106,7 +106,7 @@ public class Bojovnik {
    
     /**
      * Zaútočí proti dalšímu bojovníkovi
-     * @param proti protivník
+     * @param protivnik protivník
      * @return Informace o útoku
      */
     public String utoc(Bojovnik protivnik)
