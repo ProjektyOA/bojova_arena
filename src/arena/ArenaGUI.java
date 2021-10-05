@@ -6,6 +6,7 @@
 package arena;
 
 import arena.postavy.Bojovnik;
+import arena.postavy.Valecnik;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -174,7 +175,7 @@ public class ArenaGUI extends javax.swing.JFrame {
     }
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        bojovnik1 = new Bojovnik("Patrick", 100, 10);
+        bojovnik1 = new Valecnik("Patrick", 100, 10, 0.3);
         jLabel4.setText(bojovnik1.getJmeno() + bojovnik1.getAktZdravi() + "/" + bojovnik1.getMaxZdravi());
     }//GEN-LAST:event_jButton2ActionPerformed
 
