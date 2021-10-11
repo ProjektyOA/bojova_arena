@@ -54,7 +54,7 @@ public class Bojovnik {
     }
 
     /**
-     * Nasatví zdraví bojovníka
+     * Nastaví zdraví bojovníka
      * @param aktZdravi zdravi bojovnika
      */
     public void setAktZdravi(int aktZdravi) {
