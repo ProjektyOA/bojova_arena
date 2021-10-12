@@ -101,7 +101,7 @@ public class Bojovnik {
      * Vrátí informaci o bojovníkovi
      */
     public String toString() {
-        return  "jmeno=" + jmeno + ", zdraví =" + aktZdravi + " / " + maxZdravi +"\n";
+        return jmeno + " " + aktZdravi + " / " + maxZdravi +"\n";
     }
    
     /**
