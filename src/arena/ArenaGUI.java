@@ -6,7 +6,9 @@
 package arena;
 
 import arena.postavy.Bojovnik;
+import arena.postavy.Sermir;
 import arena.postavy.Valecnik;
+import arena.vybaveni.Brneni;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -170,18 +172,18 @@ public class ArenaGUI extends javax.swing.JFrame {
     }
 
     private void setGui() {
-        jLabel4.setText(bojovnik1.getJmeno() + bojovnik1.getAktZdravi() + "/" + bojovnik1.getMaxZdravi());
-        jLabel3.setText(bojovnik2.getJmeno() + bojovnik2.getAktZdravi() + "/" + bojovnik2.getMaxZdravi());
+        jLabel4.setText(bojovnik1.toString());
+        jLabel3.setText(bojovnik2.toString());
     }
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         bojovnik1 = new Valecnik("Patrick", 100, 10, 0.3);
-        jLabel4.setText(bojovnik1.getJmeno() + bojovnik1.getAktZdravi() + "/" + bojovnik1.getMaxZdravi());
+        jLabel4.setText(bojovnik1.toString());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        bojovnik2 = new Bojovnik("Lucas", 100, 15);
-        jLabel3.setText(bojovnik2.getJmeno() + bojovnik2.getAktZdravi() + "/" + bojovnik2.getMaxZdravi());
+        bojovnik2 = new Sermir(new Brneni("Kožená vesta", 0.3, 0.6, 5),"Swordsman", 80, 12, 0.2);
+        jLabel3.setText(bojovnik2.toString());
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
